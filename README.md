@@ -31,10 +31,10 @@ The goal of a hackathon is to create usable software or hardware with the goal o
 
 
 # Timing
-     Day 1:-    3 pm to 4 pm: Complete Instruction about the event
-	        4 pm:  Official start of the event (Online)
-     Day 2:-    7 am to 4 pm: Continue
-	        54pm to 7 pm: Evaluation
+     Day 1:-    03pm to 04pm: Complete Instruction about the event
+	                04pm: Official start of the event (Online)
+     Day 2:-    07am to 04pm: Continue
+	        04pm to 07pm:  Evaluation
 
 
 
