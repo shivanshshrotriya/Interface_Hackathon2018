@@ -58,5 +58,3 @@ The goal of a hackathon is to create usable software or hardware with the goal o
 # Prize Distribution
 1.	1st prize 10,000
 2.	2nd prize 5,000
-# Reason for Prize Distribution
-As hackathon is a very time-consuming event needs a lot of efforts from participants. The prize money should justify their 24 hours of effort and hard work. Furthermore, this prize money will help them to take forward their project.
