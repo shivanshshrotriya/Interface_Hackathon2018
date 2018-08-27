@@ -49,10 +49,10 @@ The goal of a hackathon is to create usable software or hardware with the goal o
 
 # Judgment Criteria
 1.	How efficiently used the technology?
-2.	UX (User Experience)
-3.	How feasible is the idea? 
-4.	Project Cost
-5.	Working Model
+2.	UX (User Experience) 
+3.	Project Cost
+4.	Working Model
+5.   Presentation
 
 
 # Prize Distribution
