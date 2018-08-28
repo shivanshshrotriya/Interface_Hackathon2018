@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/slide2frag"
-    android:background="@color/colorGoogleGreen"
+    android:background="@color/colorBlack"
     tools:context=".IntroductionActivitySlideFragment2">
 
     <LinearLayout
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:id="@+id/title2"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:padding="10dp"
         android:textSize="35sp"
         android:text="@string/slide_2_title" />
@@ -34,7 +34,7 @@
         android:layout_height="150dp"
         android:scaleType="fitCenter"
         android:layout_gravity="center_vertical"
-        android:src="@drawable/ic_launcher"/>
+        android:src="@drawable/ai"/>
 
         <View
             android:layout_width="wrap_content"
@@ -47,8 +47,8 @@
         android:layout_gravity="bottom|center"
         android:padding="20dp"
         android:id="@+id/desc2"
-        android:textColor="@color/colorBlack"
-        android:textSize="25sp"
+        android:textColor="@color/colorWhite"
+        android:textSize="23sp"
         android:text="@string/slide_2_description" />
 
     </LinearLayout>
