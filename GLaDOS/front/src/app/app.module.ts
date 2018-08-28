@@ -8,6 +8,7 @@ import { MaterialModule } from './material';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

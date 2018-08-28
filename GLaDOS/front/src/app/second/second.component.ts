@@ -15,8 +15,9 @@ export class SecondComponent implements OnInit {
 
   ngOnInit() {
   	this.data.getData().subscribe(
-      data => this.foo$ = data 
-    );
+      data => {this.foo$ = data; 
+      console.log(this.foo$);
+    });
   }
 
 }

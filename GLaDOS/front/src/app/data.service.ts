@@ -10,7 +10,7 @@ export class DataService {
   }
 
   getData() {
-    return this.http.get('https://jsonplaceholder.typicode.com/users')
+    return this.http.get("http://localhost:5000/")
   }
 
 }

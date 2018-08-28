@@ -6,7 +6,7 @@ import { SecondComponent } from './second/second.component';
 
 const routes: Routes = [
 	{path: '', component: FirstComponent},
-	{path: 'test', component: SecondComponent}
+	{path: 'second', component: SecondComponent}
 ];
 
 @NgModule({

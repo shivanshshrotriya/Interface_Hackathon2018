@@ -1,1 +1,40 @@
-<div></div>
+<div class="container">
+	<div align="center">
+		<h1>Real Time Image Acquired</h1>
+		<div *ngIf="foo$[0].file == '1.jpg'">
+			<img src="../assets/1.jpg" alt="image not loaded yet">
+		</div>
+		<div *ngIf="foo$[0].file == '2.jpg'">
+			<img src="../assets/2.jpg" alt="image not loaded yet">
+		</div>
+		<div *ngIf="foo$[0].file == '3.jpg'">
+			<img src="../assets/3.jpg" alt="image not loaded yet">
+		</div>
+		<div *ngIf="foo$[0].file == '4.jpg'">
+			<img src="../assets/4.jpg" alt="image not loaded yet">
+		</div>
+	</div>
+	<div align="center">
+		<h3>Detected Characteristics: {{foo$[0].tags}}</h3>
+	</div>
+	<div id='taglist'>
+		<h5> Tags List</h5>
+		<mat-list>
+  		<mat-list-item align="center">Primary: Primary Forest</mat-list-item>
+  		<mat-divider></mat-divider>
+  		<mat-list-item align="center">Cloudy: </mat-list-item>
+  		<mat-divider></mat-divider>
+  		<mat-list-item align="center">Partly_Cloudy</mat-list-item>
+  		<mat-divider></mat-divider>
+  		<mat-list-item align="center">Haze</mat-list-item>
+  		<mat-divider></mat-divider>
+  		<mat-list-item align="center">Mining</mat-list-item>
+  		<mat-divider></mat-divider>
+  		<mat-list-item align="center">Road</mat-list-item>
+  		<mat-divider></mat-divider>
+  		<mat-list-item align="center">Artisinal_Mine</mat-list-item>
+  		<mat-divider></mat-divider>
+  		<mat-list-item align="center">Primary_Road</mat-list-item>
+		</mat-list>
+	</div>
+</div>
