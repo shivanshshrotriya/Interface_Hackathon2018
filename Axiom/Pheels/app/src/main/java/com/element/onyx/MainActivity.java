@@ -26,6 +26,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -109,6 +110,51 @@ public class MainActivity extends AppCompatActivity {
 
         usertv = (TextView) findViewById(R.id.usertv);
         onyxtv = (TextView) findViewById(R.id.onyxtv);
+
+        // Temporary
+
+        usertv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Show a star box
+                /* The following chunk of code inflates a custom dialog box to allow
+                 * people to text Onyx instead of using the default voice feature */
+
+                LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
+                final View textOnyx = inflater.inflate(R.layout.star_input, null);
+                AlertDialog.Builder ab = new AlertDialog.Builder(MainActivity.this);
+                ab.setView(textOnyx);
+                ab.setCancelable(false);
+                ab.create();
+                final AlertDialog show = ab.show();
+                show.setCancelable(true);
+                RatingBar ratingBar = (RatingBar) show.findViewById(R.id.rating1);
+
+                ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+                    @Override
+                    public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+                        // Dismiss the dialog box
+
+                        show.dismiss();
+
+                        /* The following code will enable immersive mode for the splash screen
+                         * for devices running on Android 3.0 Honeycomb or higher. This will effectively
+                         * enable immersive mode for all of the app's instances as the app is only compatible
+                         * with devices running on Android 6.0 Marshmallow or higher */
+
+                        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.HONEYCOMB) {
+                            View decorView = getWindow().getDecorView();
+                            decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                                    | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                                    | View.SYSTEM_UI_FLAG_FULLSCREEN
+                                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+                        }
+                    }
+                });
+            }
+        });
 
         voice = (HTextView) findViewById(R.id.voice);
 
@@ -1476,6 +1522,9 @@ public class MainActivity extends AppCompatActivity {
     private void changeText(String t, int ti)
     {
 
+        // Replace %s with fake generic name
+        t.replaceAll("%", "human");
+
         switch (ti)
         {
 
@@ -1497,6 +1546,9 @@ public class MainActivity extends AppCompatActivity {
     {
 
         // Format TTS output
+
+        // Replace %s with fake generic name
+        speechText.replaceAll("%", "human");
 
         if(speechText.contains("0's")||speechText.contains("1's"))
         {

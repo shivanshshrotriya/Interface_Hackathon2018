@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22b23b76-2bde-4498-b01c-bd5030319026" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/onyx.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/onyx.png" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/star_input.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/element/onyx/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/element/onyx/MainActivity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="introduction_slide_fragment_3.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="introduction_slide_fragment_3.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/introduction_slide_fragment_3.xml">
           <provider editor-type-id="android-designer2">
             <state />
@@ -75,6 +73,34 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/element/onyx/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="154" column="19" lean-forward="false" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
+              <folding>
+                <element signature="e#4059#6327#0" expanded="true" />
+                <element signature="e#4952#6301#0" expanded="true" />
+                <element signature="e#6300#6301#0" expanded="true" />
+                <element signature="e#6326#6327#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="star_input.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/star_input.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -88,26 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-517">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SplashActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/element/onyx/SplashActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DevelopersActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/element/onyx/DevelopersActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -153,6 +159,12 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>voice</find>
+      <find>usertv</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2023,6 +2035,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/element/onyx/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/star_input.xml" />
       </list>
     </option>
   </component>
@@ -2062,6 +2076,12 @@
             <path>
               <item name="Onyx" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="onyx" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Onyx" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -2090,6 +2110,11 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1535444828534" />
     <property name="device.picker.selection" value="ZL33B2GC5B" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CHRIS HARRY\Desktop\Onyx\app\src\main\res\layout" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2288,7 +2313,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24650913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2448,6 +2473,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/element/onyx/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="154" column="19" lean-forward="false" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
+          <folding>
+            <element signature="e#4059#6327#0" expanded="true" />
+            <element signature="e#4952#6301#0" expanded="true" />
+            <element signature="e#6300#6301#0" expanded="true" />
+            <element signature="e#6326#6327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/star_input.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
       </provider>
