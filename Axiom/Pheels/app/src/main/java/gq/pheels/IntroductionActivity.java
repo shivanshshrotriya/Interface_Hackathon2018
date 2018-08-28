@@ -6,7 +6,10 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 
 import com.github.paolorotolo.appintro.AppIntro;
 
@@ -16,11 +19,12 @@ import com.github.paolorotolo.appintro.AppIntro;
  * for all eternity. Now go die.
  **/
 
-public class IntroductionActivity extends AppIntro{
+public class IntroductionActivity extends AppIntro {
 
     // Variable and Object Declaration
 
     Fragment slideFragment1, slideFragment2, slideFragment3;
+    EditText introPickUsername;
 
     @Override
 
@@ -34,7 +38,7 @@ public class IntroductionActivity extends AppIntro{
 
         showSeparator(false);
 
-        // Hide 
+        setNextArrowColor(getResources().getColor(R.color.colorBlack));
 
         // Set indicator colors
 
@@ -59,7 +63,7 @@ public class IntroductionActivity extends AppIntro{
         /* The following conditional statement ensures that immersive mode is enabled only
          * on devices running Android 4.3 Jelly Bean MR2 or higher */
 
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.JELLY_BEAN_MR2) setImmersive(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) setImmersive(true);
 
         // Variable and Object Initialization
 
@@ -92,7 +96,7 @@ public class IntroductionActivity extends AppIntro{
          * enable immersive mode for all of the app's instances as the app is only compatible
          * with devices running on Android 4.1 Jelly Bean or higher */
 
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.HONEYCOMB) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             View decorView = getWindow().getDecorView();
             decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
@@ -146,6 +150,8 @@ public class IntroductionActivity extends AppIntro{
         editor.putBoolean("APP_FIRST_LAUNCH", false);
         editor.commit();
 
+        // Verify picked username
+
         // Take the user to the app's main activity by sending an intent
 
         startActivity(new Intent(IntroductionActivity.this, MainActivity.class));
@@ -161,4 +167,5 @@ public class IntroductionActivity extends AppIntro{
     protected void onPause() {
         super.onPause();
     }
+
 }

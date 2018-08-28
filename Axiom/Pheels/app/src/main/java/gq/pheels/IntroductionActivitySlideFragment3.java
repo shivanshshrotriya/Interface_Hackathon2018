@@ -7,9 +7,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.ColorInt;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -102,11 +105,32 @@ public class IntroductionActivitySlideFragment3 extends Fragment implements ISli
          * introduction screen to 'shadows_into_light.ttf' */
 
         TextView title3, desc3;
+        EditText introPickUsername;
         title3 = (TextView) view.findViewById(R.id.title3);
         desc3 = (TextView) view.findViewById(R.id.desc3);
         Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "shadows_into_light.ttf");
         title3.setTypeface(typeface);
         desc3.setTypeface(typeface);
+
+        introPickUsername = (EditText)view.findViewById(R.id.intro_pick_username);
+
+        introPickUsername.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Update Global username object
+                Global.pickedUsername = s.toString();
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.introduction_slide_fragment_3, container, false);

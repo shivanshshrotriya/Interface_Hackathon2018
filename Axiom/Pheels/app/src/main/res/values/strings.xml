@@ -8,4 +8,8 @@
     <string name="slide_3_title">Honesty and permissions</string>
     <string name="slide_3_description">Are the name of the Game</string>
     <string name="intro_pick_username">Pick a username</string>
+
+    <!-- API Keys -->
+
+    <string name="dialogflow_client_access_token">f6f1996c659f4b9891435970c79af2a0</string>
 </resources>
