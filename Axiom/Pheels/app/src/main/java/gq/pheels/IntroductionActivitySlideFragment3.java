@@ -99,12 +99,12 @@ public class IntroductionActivitySlideFragment3 extends Fragment implements ISli
         View view = inflater.inflate(R.layout.introduction_slide_fragment_3, container, false);
 
         /* The following block of code will change the font of text views on the first
-         * introduction screen to 'ubuntu_r.ttf' */
+         * introduction screen to 'shadows_into_light.ttf' */
 
         TextView title3, desc3;
         title3 = (TextView) view.findViewById(R.id.title3);
         desc3 = (TextView) view.findViewById(R.id.desc3);
-        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "ubuntu_r.ttf");
+        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "shadows_into_light.ttf");
         title3.setTypeface(typeface);
         desc3.setTypeface(typeface);
 

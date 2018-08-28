@@ -3,8 +3,9 @@
     <string name="splash">Pheels</string>
     <string name="slide_1_title">Hi! I\'m Phil.</string>
     <string name="slide_1_description">I\'d like to be your new friend.</string>
-    <string name="slide_2_title">I\'m a chatbot.</string>
-    <string name="slide_2_description">I talk. And I learn from the things you tell me.</string>
-    <string name="slide_3_title">I\'m a chatbot.</string>
-    <string name="slide_3_description">I talk. And I learn from the things you tell me.</string>
+    <string name="slide_2_title">When you are blue</string>
+    <string name="slide_2_description">I\'m here to help you get through</string>
+    <string name="slide_3_title">Honesty and permissions</string>
+    <string name="slide_3_description">Are the name of the Game</string>
+    <string name="intro_pick_username">Pick a username</string>
 </resources>

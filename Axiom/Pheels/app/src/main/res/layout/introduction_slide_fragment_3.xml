@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/slide3frag"
-    android:background="@color/colorGoogleRed"
+    android:background="@color/colorWhite"
     tools:context=".IntroductionActivitySlideFragment3">
 
     <LinearLayout
@@ -21,7 +21,7 @@
         android:textAlignment="center"
         android:textColor="@color/colorBlack"
         android:padding="10dp"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:id="@+id/title3"
         android:text="@string/slide_3_title" />
 
@@ -29,12 +29,11 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"/>
 
-    <pl.droidsonroids.gif.GifImageView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:scaleType="fitCenter"
-        android:layout_gravity="center_vertical"
-        android:src="@drawable/bloo_happy"/>
+        android:layout_height="wrap_content"
+        android:hint="@string/intro_pick_username"
+        android:id="@+id/intro_pick_username"/>
 
         <View
             android:layout_width="wrap_content"
@@ -47,7 +46,7 @@
         android:layout_gravity="bottom|center"
         android:padding="20dp"
         android:textColor="@color/colorBlack"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:id="@+id/desc3"
         android:text="@string/slide_3_description" />
 

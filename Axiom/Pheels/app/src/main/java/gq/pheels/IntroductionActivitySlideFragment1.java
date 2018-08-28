@@ -39,7 +39,7 @@ public class IntroductionActivitySlideFragment1 extends Fragment implements ISli
 
     @Override
     public int getDefaultBackgroundColor() {
-        return Color.parseColor("#3CBA54");
+        return Color.parseColor("#F4C20D");
     }
 
     @Override
@@ -99,12 +99,12 @@ public class IntroductionActivitySlideFragment1 extends Fragment implements ISli
         View view = inflater.inflate(R.layout.introduction_slide_fragment_1, container, false);
 
         /* The following block of code will change the font of text views on the first
-         * introduction screen to 'ubuntu_r.ttf' */
+         * introduction screen to 'shadows_into_light.ttf' */
 
         TextView title1, desc1;
         title1 = (TextView) view.findViewById(R.id.title1);
         desc1 = (TextView) view.findViewById(R.id.desc1);
-        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "ubuntu_r.ttf");
+        Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "shadows_into_light.ttf");
         title1.setTypeface(typeface);
         desc1.setTypeface(typeface);
 

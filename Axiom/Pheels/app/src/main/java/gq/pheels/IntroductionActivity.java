@@ -30,17 +30,19 @@ public class IntroductionActivity extends AppIntro{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set done button color
-
-        setColorDoneText(getResources().getColor(R.color.colorBlack));
-
         // Hide seperator
 
         showSeparator(false);
 
-        // Make the activity immersive
+        // Hide 
 
-        setImmersive(true);
+        // Set indicator colors
+
+        setIndicatorColor(R.color.colorBlack, R.color.colorGrey);
+
+        // Set done button color
+
+        setColorDoneText(getResources().getColor(R.color.colorBlack));
 
         // The 'showStatusBar(boolean)' method decides the visibility of the status bar
 
@@ -115,7 +117,7 @@ public class IntroductionActivity extends AppIntro{
          * in the app's shared preferences is updated to ensure that the introduction screen is not
          * displayed more than once */
 
-        SharedPreferences sharedPreferences = getSharedPreferences("gq.pheels_preferences", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("com.servelots.heritagemap_preferences", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean("APP_FIRST_LAUNCH", false);
         editor.commit();
@@ -139,7 +141,7 @@ public class IntroductionActivity extends AppIntro{
          * in the app's shared preferences is updated to ensure that the introduction screen is not
          * displayed more than once */
 
-        SharedPreferences sharedPreferences = getSharedPreferences("gq.pheels_preferences", MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences("com.servelots.heritagemap_preferences", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean("APP_FIRST_LAUNCH", false);
         editor.commit();
